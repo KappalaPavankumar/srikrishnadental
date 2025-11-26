@@ -49,5 +49,4 @@ https://srikrishnadental.netlify.app/
 
 **Kappala Pavan Kumar**  
 Frontend Developer  
-GitHub: https://github.com/KappalaPavankumar 
-Netlify: https://srikrishnadental.netlify.app/
+
