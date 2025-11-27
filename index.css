@@ -1935,16 +1935,16 @@ color: var(--soft-grey);
 }
 
 .about-breadcrumb a {
-  color: var(--primary-blue);
+  color: var(--accent-red);
   text-decoration: none;
 }
 
 .about-breadcrumb a:hover {
-  color: var(--accent-red);
+  color: var(--page-white);
 }
 
 .about-breadcrumb span {
-  color: var(--accent-red);
+  color: var(--page-white);
 }
 
 
