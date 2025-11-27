@@ -106,37 +106,31 @@ function updateSliderPosition(xPosition) {
   })
 })();
 
-// ========================
-// Active and UnActive
-// =========================
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Get current file name from URL (e.g., 'about-us.html' or '' for root)
-  let currentPage = window.location.pathname.split("/").pop();
+  const form = document.querySelector(".contact-validation");
 
-  // Treat empty as home
-  if (currentPage === "") {
-    currentPage = "index.html";
-  }
+  form.addEventListener("submit", function (e) {
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      e.stopPropagation();
 
-  const navLinks = document.querySelectorAll(".navbar .nav-link");
+      form.querySelectorAll(".contact-input").forEach(input => {
+        const errorBox = input.nextElementSibling;
 
-  navLinks.forEach(link => {
-    // Get only the file part of href, so '/about-us.html' -> 'about-us.html'
-    let href = link.getAttribute("href");
-    let linkPage = href.split("/").pop();
-
-    if (linkPage === "") {
-      linkPage = "index.html";
+        if (!input.checkValidity()) {
+          errorBox.style.display = "block";
+        } else {
+          errorBox.style.display = "none";
+        }
+      });
     }
 
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-    }
+    form.classList.add("was-validated");
   });
 });
+
+
 
 // ========================
 // Whats app and Phone
@@ -163,20 +157,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // For mobile: show QR on tap (since hover doesn't exist)
+  // WhatsApp behavior
   const whatsappBtn = document.getElementById("whatsappBtn");
   const whatsappQr = document.getElementById("whatsappQr");
 
   if (whatsappBtn && whatsappQr) {
-    whatsappBtn.addEventListener("click", function (e) {
-      // on small screens, toggle QR instead of going directly
-      if (window.innerWidth < 768) {
-        e.preventDefault(); // prevent opening wa.me immediately
-        const isVisible = whatsappQr.style.display === "block";
-        whatsappQr.style.display = isVisible ? "none" : "block";
-      }
-      // on desktop it will still go to wa.me (hover shows QR)
-    });
+
+    // Desktop (hover shows QR)
+    if (window.innerWidth >= 768) {
+      whatsappBtn.addEventListener("mouseenter", () => {
+        whatsappQr.style.display = "block";
+      });
+
+      whatsappBtn.addEventListener("mouseleave", () => {
+        whatsappQr.style.display = "none";
+      });
+    }
+
+    // Mobile (click opens WhatsApp normally, NO QR)
+    if (window.innerWidth < 768) {
+      whatsappQr.style.display = "none";  // hide QR always
+      // no e.preventDefault() here
+    }
   }
+
 });
 
 
@@ -217,7 +221,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// =========================
-// AOS
-// =========================
-AOS.init();

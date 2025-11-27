@@ -1,7 +1,7 @@
 :root {
   --primary-blue: #1f72c9;
   --primary-blue-dark: #15579b;
-
+  --light-blue: #0d6efd40;
   --accent-red: #e03438;
   --accent-red-dark: #b9272a;
 
@@ -254,7 +254,7 @@ h3 {
   bottom: 0;
   height: 3px;
   width: 0;
-  background-color: var(--accent-red);
+  background-color: var(--accent-red) !important;
   transition: width 0.3s ease;
 }
 
@@ -384,7 +384,8 @@ header {
   position: relative;
   z-index: 2;
   /* max-width: 650px; */
-  padding: 14rem 1.5rem;
+  /* padding: 14rem 1.5rem; */
+  padding: 8rem 1.5rem;
 }
 
 /* If you use Bootstrap's container, this will just enhance it */
@@ -399,6 +400,7 @@ header {
   line-height: 1.1;
   margin-bottom: 1.5rem;
   font-weight: 600;
+  max-width: 700px;
 }
 
 .hero-subtitle {
@@ -407,8 +409,8 @@ header {
   color: rgba(255, 255, 255, 0.9);
   max-width: 500px;
   margin-bottom: 2rem;
-  /* text-shadow: 0 0 8px rgba(0, 150, 255, 0.4); */
-text-shadow: 0 0 6px rgba(255,255,255,0.8);
+  text-shadow: 0 0 8px rgba(0, 150, 255, 0.4);
+/* text-shadow: 0 0 6px rgba(255,255,255,0.8); */
 }
 
 /* CTA area */
@@ -461,6 +463,22 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
 }
 
+.btn-primary-hero3 {
+
+  outline: 1px solid var(--accent-red);
+  outline-offset: 3px;
+ background: transparent;
+ backdrop-filter: blur(5px);
+
+}
+
+.btn-primary-hero3:hover {
+  background: var(--accent-red);
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+
+}
+
 /* Call text */
 .hero-call-text {
   font-size: 0.98rem;
@@ -471,13 +489,14 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
 .hero-call-text a {
   color: var(--white);
   text-decoration: none;
-  border-bottom: 2px solid var(--accent-red);
+  /* border-bottom: 2px solid var(--accent-red); */
 }
 
-.hero-call-text a:hover {
+/* .hero-call-text a:hover {
   border-bottom-color: var(--light-glow-blue);
   
-}
+} */
+
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
@@ -496,7 +515,10 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
   }
 }
 
-
+.service-text{
+  text-align: center;
+  
+}
 .number {
   color: var(--primary-blue);
   text-align: center;
@@ -607,18 +629,19 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
 /* Big faded background text */
 .welcome-bg-text {
   font-size: 48px;
-  /* huge text */
   font-weight: 800;
   letter-spacing: 2px;
   color: rgba(31, 114, 201, 0.10);
-  /* faded teal / blue tint */
   position: absolute;
-  top: -30px;
-  left: 0;
+  top: -14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   pointer-events: none;
   line-height: 1;
   white-space: nowrap;
+  width: 100%;
+  text-align: center;
 }
 
 /* Main text over it */
@@ -670,8 +693,8 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
 /* Make it responsive */
 @media (max-width: 767.98px) {
   .welcome-bg-text {
-    font-size: 50px;
-    top: -40px;
+    font-size: 45px;
+    top: -10px;
   }
 
   .welcome-main-text {
@@ -690,7 +713,7 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
   }
 
   .session-padding {
-    padding: 20% 0;
+    padding: 15% 0;
   }
 }
 
@@ -715,6 +738,7 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
 .txt-dance {
   font-family: var(--dancing);
   font-weight: 700;
+  color: var(--accent-red);
 }
 
 .bg-blue h2 {
@@ -734,10 +758,10 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
 }
 
 @media (max-width: 375.98px) {
-  .welcome-bg-text {
+  /* .welcome-bg-text {
     font-size: 45px;
     top: -40px;
-  }
+  } */
 }
 
 /* ------------------------------------------------------------- */
@@ -1084,7 +1108,7 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
   font-size: 0.98rem;
   line-height: 1.7;
   max-width: 900px;
-  margin: 0 auto 2.5rem auto;
+  margin: 0 auto 1.5rem auto;
 }
 
 .knowledge-btn {
@@ -1332,9 +1356,7 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
 }
 
 @media (max-width: 768px) {
-  .dental-main-container {
-    padding: 25px;
-  }
+
 
   .dental-page-title {
     font-size: 2rem;
@@ -1363,10 +1385,10 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
 
 @media (max-width: 576px) {
 
-  .dental-main-container {
+  /* .dental-main-container {
     padding: 20px;
     border-radius: 15px;
-  }
+  } */
 
   .dental-page-title {
     font-size: 1.5rem;
@@ -1447,6 +1469,7 @@ text-shadow: 0 0 6px rgba(255,255,255,0.8);
 transition: all 0.4 ease;
   border-radius: 12px;
   cursor: pointer;
+  
 }
 
 .card:hover {
@@ -1492,7 +1515,7 @@ transition: all 0.3s ease;
 .service-title {
   color: var(--primary-blue);
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 
@@ -1835,4 +1858,339 @@ color: var(--soft-grey);
     right: 12px;
     bottom: 12px;
   }
+}
+@media (max-width: 767px) {
+  .whatsapp-qr {
+    display: none !important;
+  }
+}
+
+/* ================================================================================= */
+/* About US Page */
+/* ================================================================================= */
+/* ABOUT HERO SECTION */
+.about-hero {
+  position: relative;
+  height: 38vh;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+  overflow: hidden;
+
+}
+
+/* Background Image */
+.about-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* Dark + blur overlay */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--light-blue);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+/* Content wrapper */
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero-title {
+  font-family: var(--source-font);
+  font-size: clamp(2rem, 3vw, 3rem);
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+
+.about-hero-title span {
+  font-family: var(--dancing);
+  color: var(--accent-red);
+  margin-left: 0.4rem;
+}
+
+/* Breadcrumb */
+.about-breadcrumb {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: var(--page-white);
+  font-weight: 600;
+  z-index: 2;
+}
+
+.about-breadcrumb a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.about-breadcrumb a:hover {
+  color: var(--accent-red);
+}
+
+.about-breadcrumb span {
+  color: var(--accent-red);
+}
+
+
+/* About Dentist */
+
+/* ========== MEET THE DENTIST SECTION ========== */
+
+.about-dentist-section {
+  position: relative;
+  /* padding: clamp(3rem, 6vw, 5rem) 0; */
+  background-color: var(--page-white);
+  overflow: hidden;
+}
+
+/* Logo / shape in background */
+.about-dentist-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5%;
+  width: 60%;
+  height: 120%;
+  background: url("img/logo.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Content wrapper */
+.about-dentist-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Small “Meet” label */
+.about-dentist-kicker {
+  font-family: var(--dancing);
+  font-size: 1.6rem;
+  color: var(--accent-red);
+  margin-bottom: 0.25rem;
+}
+
+/* Main heading */
+.about-dentist-title {
+  font-family: var(--source-font);
+  font-weight: 700;
+  font-size: clamp(2rem, 3.1vw, 2.6rem);
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+/* Subheading */
+.about-dentist-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+}
+
+/* Paragraphs */
+.about-dentist-text p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 0.9rem;
+}
+
+/* Right image card */
+.about-dentist-photo-wrapper {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+  background-color: var(--white);
+}
+
+.about-dentist-photo-wrapper img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Optional subtle overlay gradient on image */
+.about-dentist-photo-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top right,
+    rgba(31, 114, 201, 0.18),
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+/* Make columns stack nicely on small screens */
+@media (max-width: 425px) {
+  .about-dentist-section::before {
+    /* right: -30%; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-dentist-photo-wrapper {
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 426px) and (max-width:768px) {
+  .about-dentist-section::before {
+   
+    top: -10%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ================================================================== */
+/* Contact Us Page */
+/* ================================================================== */
+/* Card Wrapper */
+.contact-box {
+  background: #002d62;
+  border: 1px solid var(--soft-grey);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+.contact-box h3{
+  color: var(--page-white);
+
+}
+/* Inputs */
+.contact-input {
+  border-radius: 8px;
+  border: 1px solid var(--soft-grey);
+  padding: 12px;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  background: var(--page-white);
+  transition: all 0.25s ease;
+}
+
+.contact-input::placeholder {
+  color: var(--text-muted);
+}
+
+.contact-input:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 0.15rem rgba(31, 114, 201, 0.25);
+}
+
+/* Error Text */
+.contact-error {
+  font-size: 0.85rem;
+  color: var(--accent-red);
+  margin-top: 5px;
+  display: none;
+}
+
+/* Button */
+.contact-btn {
+  background: var(--accent-red);
+  color: var(--white);
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.contact-btn:hover {
+  background: var(--accent-red-dark);
+  transform: translateY(-2px);
+}
+
+/* Panel */
+/* .contact-panel {
+  max-width: 420px;
+  background: var(--white);
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+} */
+
+/* Title */
+.contact-panel-title {
+  font-family: var(--source-font);
+  font-size: 2rem;
+  color: var(--primary-blue);
+}
+
+.contact-panel-title span {
+  font-family: var(--dancing);
+  color: var(--accent-red);
+}
+
+/* Underline */
+.contact-panel-underline {
+  width: 70px;
+  height: 3px;
+  background: var(--accent-red);
+}
+
+/* Doctor / Clinic name */
+.contact-panel-name {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* Icon circle */
+.contact-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--soft-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--page-white);
+}
+
+.contact-icon-wrap i {
+  font-size: 1.1rem;
+  color: var(--primary-blue);
+}
+
+/* Text */
+.contact-item-heading {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--primary-blue-dark);
+}
+
+.contact-item-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.contact-item-text a{
+  
+  color: var(--text-muted);
+}
+
+.modal-title{
+  color: var(--primary-blue);
+}
+.btn:hover{
+  color: var(--page-white);
 }

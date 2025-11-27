@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Krishna Hospital & A Dental Clinic</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Popins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Serif -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Dancing Script -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Font Awesome 6.5.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon//favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon//favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon//site.webmanifest" />
+
+    <!-- Preload -->
+    <link rel="preload" as="video" href="video/hero-video-2.mp4" type="video/mp4">
+    <link rel="preload" as="image" href="img/wallpaper.webp" type="image/webp">
+
+
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="about-us.html">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <!-- TOP BAR -->
+    <div class="topbar py-2">
+        <div class="container d-flex align-items-center">
+
+            <!-- LEFT: Social Icons -->
+            <div class="topbar-left d-flex align-items-center gap-2">
+                <a href="#" class="topbar-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="topbar-social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="topbar-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="topbar-social-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#" class="topbar-social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+            <!-- RIGHT: Info Items -->
+            <div class="topbar-right ms-auto d-flex align-items-center gap-2    ">
+
+                <div class="topbar-item">
+                    <a href="#/">
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <span class="topbar-label ">Get Directions</span>
+                    </a>
+                    <span class="ps-2">|</span>
+                </div>
+
+                <div class="topbar-item">
+                    <a href="tel:+91 9876543210">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="topbar-label ">9876543210</span>
+                    </a>
+                    <span class="ps-2">|</span>
+                </div>
+
+                <div class="topbar-item">
+                    <a href="#/" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <span class="topbar-label ps-2">Request Appointment</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-pad sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="position: relative;">
+                    <div class="logo-circle">
+                        <img src="img/logo-2.png" alt="Logo" class="img-round" loading="eager">
+                    </div>
+                </a>
+
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse flex-grow-0 mobile-pad" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item nav-pad2">
+                            <a class="nav-link " href="/">Home</a>
+                        </li>
+
+                        <li class="nav-item nav-pad2">
+                            <a class="nav-link" href="/about-us.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown nav-pad2">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav-link" href="#">Dental Implants</a></li>
+                                <li><a class="dropdown-item nav-link" href="#">Cosmetic</a></li>
+                                <li><a class="dropdown-item nav-link" href="#">Teeth Whitening</a></li>
+                                <li><a class="dropdown-item nav-link" href="#">Orthodentics</a></li>
+                                <li><a class="dropdown-item nav-link" href="#">Other Services</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-pad2">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+
+                        <li class="nav-item dropdown nav-pad2">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Misc</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav-link" href="#">Testimonials</a></li>
+                                <li><a class="dropdown-item nav-link" href="#">FAQs</a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-pad2">
+                            <a class="nav-link active" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item nav-pad2 pt-3 pt-lg-0">
+
+                            <a href="#/" class="btn-primary-hero btn-primary-hero2" data-bs-toggle="modal"
+                                data-bs-target="#appointmentModal">
+                                Book Now
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Us Banner-->
+    <section class="about-hero">
+
+        <!-- Background Image -->
+        <img src="img/contact-banner.webp" alt="Banner" class="about-hero-img">
+
+        <!-- Content -->
+        <div class="about-hero-content container">
+            <h1 class="about-hero-title">
+                CONTACT <span>Us</span>
+            </h1>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="about-breadcrumb">
+            <a href="index.html">Home</a> | <span>Contact Us</span>
+        </div>
+
+    </section>
+
+
+    <section class="session-padding">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-12 col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="contact-panel p-4 p-md-5 rounded-4">
+                        <h2 class="contact-panel-title mb-1">
+                            Contact <span>Us</span>
+                        </h2>
+                        <div class="contact-panel-underline mb-3"></div>
+
+                        <p class="contact-panel-name mb-4">
+                            Sri Krishna Hospital &amp; Dental Clinic
+                        </p>
+
+                        <!-- Address -->
+                        <div class="d-flex align-items-start mb-4 gap-3">
+                            <div class="contact-icon-wrap">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="contact-item-heading mb-1">Email</h6>
+                                <p class="mb-0 contact-item-text">
+                                    <a href="mailto:"> abc@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="d-flex align-items-start mb-4 gap-3">
+                            <div class="contact-icon-wrap">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="contact-item-heading mb-1">Give us a call</h6>
+                                <a href="tel:9876543210">
+                                    <p class="mb-0 contact-item-text">
+                                    +91 9876543210
+                                </p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start my-4 gap-3">
+                            <a href="#">
+                                <div class="text-center">
+                                <img src="img/map.webp" alt="">
+                                <p class="contact-item-heading my-4">Get Location on Google Map</h6>
+                            </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-7 col-md-6 col-sm-12">
+                    <div class="contact-box p-4 shadow-sm rounded-4 ">
+                        <h3 class="mb-3 fw-semibold">Send Us a Message</h4>
+
+                            <form class="contact-validation" novalidate>
+
+                                <!-- Name -->
+                                <div class="mb-3">
+                                    <input type="text" class="contact-input form-control" placeholder="Full Name"
+                                        required>
+                                    <div class="contact-error">Please enter your name.</div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="mb-3">
+                                    <input type="email" class="contact-input form-control" placeholder="Email Address"
+                                        required>
+                                    <div class="contact-error">Please enter a valid email.</div>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="mb-3">
+                                    <input type="text" class="contact-input form-control" placeholder="Phone Number"
+                                        pattern="[0-9]{10}" required>
+                                    <div class="contact-error">Enter a valid 10-digit phone number.</div>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="mb-3">
+                                    <textarea rows="4" class="contact-input form-control" placeholder="Your Message"
+                                        required></textarea>
+                                    <div class="contact-error">Message cannot be empty.</div>
+                                </div>
+
+                                <!-- Submit -->
+                                <button class="btn-primary-hero  w-45" type="submit">Send Message</button>
+
+                            </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- MAP Section -->
+    <section class="contact-overlay-section">
+        <div class=" position-relative" data-aos="fade-up" data-aos-duration="3000">
+
+            <!-- CONTACT FORM (Order 1 on mobile, Order 2 on desktop) -->
+            <div class="contact-overlay-form p-4 shadow-lg rounded-3 order-1 order-md-2 d-none">
+                <h4 class="fw-bold mb-3">Get In Touch</h4>
+
+                <form class="needs-validation" novalidate>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Full Name" required>
+                        <div class="invalid-feedback">Please enter your full name.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Mobile Number" pattern="[0-9]{10}"
+                            required>
+                        <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea rows="4" class="form-control" placeholder="Your Message" required></textarea>
+                        <div class="invalid-feedback">Please enter your message.</div>
+                    </div>
+
+                    <button class="btn btn-primary-hero w-100" type="submit">Send Message</button>
+
+                </form>
+            </div>
+
+            <!-- MAP (Order 2 on mobile, Order 1 on desktop) -->
+            <div class="map-box rounded-3 overflow-hidden order-2 order-md-1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.424729675278!2d78.49975247626419!3d13.570842901455078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb26640390a22e9%3A0x11a7355e90645b54!2sSRI%20KRISHNA%20HOSPITAL%20%26%20DENTAL%20CLINIC!5e0!3m2!1sen!2sin!4v1764131926333!5m2!1sen!2sin"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- footer Section -->
+    <footer class="dazzl-padding footer-section py-5">
+        <div class="container">
+            <div class="row g-4 ">
+
+                <!-- Logo & About -->
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 text-center">
+                    <div class="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <img src="img/logo-2.png" alt="" width="150" class="rounded-circle mb-3" loading="lazy">
+                    </div>
+
+                    <p class="text-justify">
+                        Our team at Sri Krishna Hospital & Dental Clinic is committed to delivering trusted and
+                        compassionate dental care.
+                    </p>
+
+                    <div class="d-flex align-items-center gap-2 mt-3 justify-content-center">
+                        <a href="#" class="topbar-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="topbar-social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="topbar-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="topbar-social-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="topbar-social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-12 col-lg-2 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="">
+                        <h5 class="fw-bold mb-3">Quick Links</h5>
+                        <ul class="footer-links pt-1 pt-md-3">
+                            <li><a href="/index.html"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                            <li><a href="/about-us.html"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right"></i> Blogs</a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right"></i> Services</a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right"></i> SiteMap</a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center text-center text-lg-start">
+                    <div class="">
+                        <h5 class="fw-bold mb-3">Get In Touch</h5>
+                        <div class="touch pt-1 pt-md-3">
+                            <p class="mb-1"><a href="#/"><i class="fa-solid fa-phone"></i>+91 98765 43210</a></p>
+                            <p class="mb-1"><a href="#/"><strong><i class="fa-solid fa-envelope"></i></strong>
+                                    info@dentalclinic.com</a></p>
+                            <p class="mb-1"><a href="#/"><strong><i class="fa-solid fa-location-dot"></i></strong>
+                                    Madanapalle, Andhra
+                                    Pradesh</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra Column -->
+                <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center text-center text-lg-start">
+                    <div class="">
+                        <h5 class="fw-bold mb-3">Working Hours</h5>
+                        <div class="pt-1 pt-md-3">
+                            <p class="mb-1">Mon - Fri: 9:00 AM – 8:00 PM</p>
+                            <p class="mb-1">Saturday: 10:00 AM – 6:00 PM</p>
+                            <p class="mb-1">Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-text pt-3">
+                <hr>
+                <p class="text-center">© 2025 All rights reserved • Site Designed, Maintained & Hosted by <a
+                        href="#/">Pavan
+                        Kumar Kappala</a> .</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal POP Up -->
+    <!-- Appointment Modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Request Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form class="needs-validation" novalidate>
+
+                        <div class="row g-3">
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" required>
+                                <div class="invalid-feedback">Enter your full name.</div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" required>
+                                <div class="invalid-feedback">Enter a valid email.</div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Mobile Number</label>
+                                <input type="text" class="form-control" pattern="[0-9]{10}" required>
+                                <div class="invalid-feedback">Enter a valid 10-digit number.</div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" required>
+                                <div class="invalid-feedback">Select a date.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="4" required></textarea>
+                                <div class="invalid-feedback">Enter your message.</div>
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary-hero btn-primary-hero2 w-100 mt-3" type="submit">
+                            Submit Appointment Request
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Whats app and Phone and Bottom to Top -->
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <!-- Phone -->
+        <a href="tel:+91 9876543210" class="floating-btn bounce-anim" title="Call Us">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+
+        <!-- WhatsApp -->
+        <div class="floating-whatsapp-wrapper">
+            <a href="https://wa.me/9876543210" target="_blank" class="floating-btn whatsapp-btn bounce-anim"
+                id="whatsappBtn" title="Chat on WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <!-- QR Scanner Popup -->
+            <div class="whatsapp-qr" id="whatsappQr">
+                <p class="mb-2">Scan to chat on WhatsApp</p>
+                <!-- replace with your real QR image -->
+                <img src="img/qr-code.svg" alt="WhatsApp QR" loading="lazy" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn bounce-anim" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="index.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
